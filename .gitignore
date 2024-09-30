@@ -1,14 +1,30 @@
+# Node modules
 node_modules/
-.expo/
-dist/
-npm-debug.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
-*.orig.*
-web-build/
 
-# macOS
+# Expo files
+.expo/
+.expo-shared/
+
+# Android files
+android/
+*.apk
+
+# iOS files
+ios/
+*.xcworkspace
+*.xcuserstate
+
+# Build files
+build/
+dist/
+
+# Logs
+*.log
+
+# OS generated files
 .DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+
