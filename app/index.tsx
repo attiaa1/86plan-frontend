@@ -1,15 +1,18 @@
-import { Text, View } from "react-native";
+import React from 'react';
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+import Background from '../components/Background';
+import Hero from '../components/Hero';
 
-export default function Index() {
+const App = () => {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-    </View>
+    <SafeAreaProvider>
+      <Background>
+        <SafeAreaView style={{ flex: 1 }}>
+          <Hero />
+        </SafeAreaView>
+      </Background>
+    </SafeAreaProvider>
   );
-}
+};
+
+export default App;
